@@ -1,11 +1,11 @@
 # Interpolação Polinomial
 clear all;
 # Vetor X
-x = [0.99907,0.99852,0.99826,0.99818,0.99828,0.99849,0.99878];
+x = [1,2,3,4,5];
 n = length(x);
 # Vetor f(x)
-f = [20,25,30,35,40,45,50];
-xint = 0.99837;
+f = [1,4,9,7,-2];
+xint = 3.5; # ponto onde deve ocorrer a interpolacao
 
 for i = 1:n
   L(i) = 1;
@@ -16,4 +16,8 @@ for i = 1:n
   endfor
 endfor
 
-yfinal = sum(f.*L);
+# printa valores de saída
+x
+f
+xint
+yfinal = sum(f.*L)
