@@ -3,7 +3,7 @@ clear all
 a = input("Digite o limite inferior ");
 b = input("Digite o limite superior ");
 dx = input("Digite o valor de passo dx ");
-f = input("Digite a funcao: ");
+f = input("Digite a funcao @(x): ");
 
 k = 0;
 x = a:dx:b;
